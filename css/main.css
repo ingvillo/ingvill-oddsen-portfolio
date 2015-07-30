@@ -1,0 +1,232 @@
+/*reset css*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/*common css*/
+
+.clearfix {
+    overflow: auto;
+}
+
+ol, ul {
+  	list-style: none;
+}
+
+.content-footer,
+.content {
+	text-align: center;
+}
+
+body{
+	/*Typography Declarations*/
+  	color: #222222;
+  	font-size: 1em;
+  	font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+
+/* masthead */
+
+.masthead {
+	background-image: url('http://i.imgur.com/x7Eiac0.jpg');
+	background-position: center bottom;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	/* Typography */
+  	font-family: Roboto, sans-serif;
+  	font-weight: 300;
+  	color: white;
+
+
+}
+
+
+
+.masthead-fn,
+.masthead-ln {
+	/* Typography */
+	font-size: 7em;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 100;
+	letter-spacing: 0.1em;
+}
+
+
+.masthead-fn {
+	padding: 1em 0 0 0;
+}
+
+.masthead-ln {
+	margin-top: -0.4em;
+
+}
+
+.masthead-subheading {
+	/* Typography */
+	font-size: 1.6em;
+	padding: 2em 0;
+	color: white;
+	letter-spacing: 0.15em;
+}
+
+
+/*content css*/
+
+
+
+.projects,
+.introduction-section,
+.location-section,
+.questions-section{
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.75rem;
+}
+
+.introduction-section > p,
+.location-section > p,
+.content-footer > p {
+    /* Typography Declarations */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    padding: 1em 0 0 0;
+}
+
+.projects > h1,
+.introduction-section > h1,
+.location-section > h1,
+.content-footer > h1, 
+.questions-section > h1 {
+    /* Typography Declarations */
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.02em;
+    padding: 1em 0 0 0;
+    font-weight: 100;
+}
+
+.questions-section > h2 {
+    /* Typography Declarations */
+    font-family: 'Roboto Slab', sans-serif;  
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #303C8B;
+    /* Layout */
+    margin: 1em 0 1em 0;
+}
+
+.artwork {	
+	display: inline-block;
+	padding: 2em 0 2em 0; 
+}
+
+.artwork img {
+	max-width: 100%;
+}
+
+/*link*/
+a {
+  color: #303C8B;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* mouse over link */
+a:hover {
+  color: #5D5F8B;
+}
+
+
+
+.social > li{
+  display: inline-block;
+  padding: 1em 0 0 0;
+}
+
+/* Footer */
+
+.content-footer > p {
+  color: white;
+}
+
+.content-footer {
+  /* Red, Green, Blue: #RRGGBB */
+  background-color: #BFB1B3;
+  padding: 3em 0;
+  margin-top: 4em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 660px) {
+  .masthead {
+      height: 18em;
+  }
+
+  .masthead-fn {
+	padding: 0.45em 0 0 0;
+}
+  
+  	.masthead-fn,
+	.masthead-ln {
+	/* Typography */
+	font-size: 5em;
+	letter-spacing: 0.1em;
+}
+
+.masthead-subheading {
+	/* Typography */
+	font-size: 1.35em;
+	padding: 1.5em 0;
+	color: white;
+	letter-spacing: 0.1em;
+}
+
+
+  .introduction-section > h1,
+  .location-section > h1,
+  .content-footer > h1, 
+  .questions-section > h1,
+  .projects > h1 {
+    /* Typography Declarations */
+    font-size: 1.75em;
+    letter-spacing: 0.02em;
+  }
+  
+  .projects,
+  .introduction-section,
+  .location-section,
+  .questions-section {
+      padding: 0 1em 0 1em;
+  }
+}
+
